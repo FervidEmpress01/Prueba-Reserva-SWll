@@ -24,28 +24,29 @@ Las responsabilidades pueden cambiar durante el examen.
 |---|---|---|---|---|
 | HU-01 | Alta | 12 | Una reserva válida devuelve true; el bloque deja de estar libre. Un segundo intento sobre el mismo bloque devuelve false y conserva al primer titular. Bloque inválido, estudiante nulo o blanco: false. | |
 | HU-02 | Alta | 11 | Cancelar con titular y bloque correctos devuelve true y lo deja disponible; cancelar un bloque libre o por otro estudiante devuelve false y no modifica el estado.  | Escribir prueba de cancelación autorizada (RED); implementar `CancellationPolicy.cancel`; prueba de cancelación por estudiante distinto; prueba de bloque libre; ejecutar `mvn test` (GREEN) |
+| HU-03 | Muy Alta | 4 | Un estudiante solo puede reservar un unico salon, mientras que otro diferente que no tenga reserva si la puede realizar.| |
 
 ## Tablero mínimo
 | Por hacer | En curso | Terminado |
 |---|---|---|
-|  | | HU-01, HU-02 |
+|  | | HU-01 |
+|  | |  HU-02 |
+| HU-03 | |  |
 
 ## Prácticas técnicas
 Evidencia RED (prueba inicial que falla, momento o commit):
 "Prueba unitaria de UH-01, estado actual: RED"
-![Imagen de la prueba unitaria de UH-01, estado actual: RED](image-1.png)
-![Imagen del commit prueba unitaria de UH-01, estado actual: RED](image.png)
+Evidencia RED HU-01 (commit `32bedd976cb9454cb2206a7a6cf7719327d8b0ab`)
 Evidencia GREEN (prueba que pasa después, momento o commit):
-![Imagen de implementación de UH-01, estado actual: GREEN](image-2.png)
-![Imagen de implementación de prueba unitaria UH-01, estado actual: GREEN](image-3.png)
+
 
 Evidencia RED HU-02 (commit `702323d`): `CancellationPolicyTest.cancelarConTitularYBloqueCorrectosLiberaElBloque` falló con `expected: <true> but was: <false>` (mvn test, `CancellationPolicy.cancel` aún sin implementar).
 Evidencia GREEN HU-02 (commit `b1d2cd6`): tras implementar `CancellationPolicy.cancel`, `mvn test` reportó `Tests run: 3, Failures: 0, Errors: 0, BUILD SUCCESS`.
 Refactorización o decisión de simplicidad: HU-02 reutiliza `Reservations.validSlot` y `Reservations.validStudent` ya existentes en el contrato, en vez de duplicar validaciones en `CancellationPolicy`.
 
 ## Git / revisión / CI
-PR HU-01: ... | Revisor distinto del autor: ...
-PR HU-02: ... | Revisor distinto del autor: ...
+PR HU-01: Anthony Contreras | Revisor distinto del autor: Mauricio Carrion 
+PR HU-02: Kevin García | Revisor distinto del autor: David Guachamin
 Resultado Actions (éxito/fallo/no disponible): ... | URL de ejecución: ...
 
 ## Cambio del cliente (completar SOLO cuando se anuncie)
