@@ -1,28 +1,34 @@
-# Registro XP - Equipo ___
-Repositorio: https://github.com/_________________
-Integrantes y usuarios GitHub: ...
+# Registro XP - Equipo Alpha
+Repositorio: https://github.com/FervidEmpress01/Prueba-Reserva-SWll
+Integrantes y usuarios GitHub: 
+- Mauricio Carrion (@FervidEmpress01) 
+- Anthony Contreras (@7heAnsw3r) 
+- Kevin García (@NattyrdGT) 
+- David Guachamín (@Davandres)
 
 ## Cliente y objetivo de valor
 ¿Qué necesidad de negocio resuelve este incremento? (máx. 2 líneas)
+Permitir a los usuarios gestionar sus reservas de mesa de manera eficiente y automatizada.
 
 ## Valores XP observables
 Registre dos decisiones reales del equipo que reflejen comunicación, simplicidad, retroalimentación, coraje o respeto.
 
 ## Responsabilidades flexibles
-Pareja 1 (HU-01): ___ / ___ | Pareja 2 (HU-02): ___ / ___
-Facilitación: ___ | Seguimiento: ___ | Consulta al cliente: ___
+Pareja 1 (HU-01): David / Anthony | Pareja 2 (HU-02): Kevin / Mauricio
+Facilitación: Mauricio | Seguimiento: Anthony | Consulta al cliente: Kevin
 Las responsabilidades pueden cambiar durante el examen.
 
 ## Historias, aceptación y estimaciones
 | Historia | Prioridad | Estimación relativa | Criterios de aceptación | Tareas |
 |---|---|---|---|---|
-| HU-01 | Alta | | | |
-| HU-02 | Alta | | | |
+| HU-01 | Alta | 12 | Una reserva válida devuelve true; el bloque deja de estar libre. Un segundo intento sobre el mismo bloque devuelve false y conserva al primer titular. Bloque inválido, estudiante nulo o blanco: false. | |
+| HU-02 | Alta | 11 | Cancelar con titular y bloque correctos devuelve true y lo deja disponible; cancelar un bloque libre o por otro estudiante devuelve false y no modifica el estado.  | |
 
 ## Tablero mínimo
 | Por hacer | En curso | Terminado |
 |---|---|---|
-| | | |
+| | | HU-02 |
+| HU-01 | | |  
 
 ## Prácticas técnicas
 Evidencia RED (prueba inicial que falla, momento o commit):
