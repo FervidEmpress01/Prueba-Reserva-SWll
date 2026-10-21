@@ -44,6 +44,10 @@ Evidencia RED HU-02 (commit `702323d`): `CancellationPolicyTest.cancelarConTitul
 Evidencia GREEN HU-02 (commit `b1d2cd6`): tras implementar `CancellationPolicy.cancel`, `mvn test` reportó `Tests run: 3, Failures: 0, Errors: 0, BUILD SUCCESS`.
 Refactorización o decisión de simplicidad: HU-02 reutiliza `Reservations.validSlot` y `Reservations.validStudent` ya existentes en el contrato, en vez de duplicar validaciones en `CancellationPolicy`.
 
+Evidencia RED HU-03 (commit `880a0d36aef156dafece0214f3edc8f99f7d92fa`)
+Evidencia GREEN HU-03 (commit `68cdad40a59a016b3aa18892d4892136a720563f`)
+
+
 ## Git / revisión / CI
 PR HU-01: Anthony Contreras | Revisor distinto del autor: Mauricio Carrion 
 PR HU-02: Kevin García | Revisor distinto del autor: David Guachamin
