@@ -38,7 +38,7 @@ Evidencia RED (prueba inicial que falla, momento o commit):
 "Prueba unitaria de UH-01, estado actual: RED"
 Evidencia RED HU-01 (commit `32bedd976cb9454cb2206a7a6cf7719327d8b0ab`)
 Evidencia GREEN (prueba que pasa después, momento o commit):
-
+Evidencia GREEN HU-01 (commit `68cdad40a59a016b3aa18892d4892136a720563f`)
 
 Evidencia RED HU-02 (commit `702323d`): `CancellationPolicyTest.cancelarConTitularYBloqueCorrectosLiberaElBloque` falló con `expected: <true> but was: <false>` (mvn test, `CancellationPolicy.cancel` aún sin implementar).
 Evidencia GREEN HU-02 (commit `b1d2cd6`): tras implementar `CancellationPolicy.cancel`, `mvn test` reportó `Tests run: 3, Failures: 0, Errors: 0, BUILD SUCCESS`.
