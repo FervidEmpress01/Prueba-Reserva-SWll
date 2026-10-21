@@ -27,11 +27,12 @@ Las responsabilidades pueden cambiar durante el examen.
 ## Tablero mínimo
 | Por hacer | En curso | Terminado |
 |---|---|---|
-| | | HU-02 |
-| HU-01 | | |  
+|  | | HU-01 |
+| HU-02 | |   |
 
 ## Prácticas técnicas
 Evidencia RED (prueba inicial que falla, momento o commit):
+"Prueba unitaria de UH-01, estado actual: RED"
 Evidencia GREEN (prueba que pasa después, momento o commit):
 Refactorización o decisión de simplicidad:
 
