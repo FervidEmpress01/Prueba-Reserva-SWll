@@ -14,7 +14,7 @@ Permitir a los usuarios gestionar sus reservas de mesa de manera eficiente y aut
 Registre dos decisiones reales del equipo que reflejen comunicación, simplicidad, retroalimentación, coraje o respeto.
 
 ## Responsabilidades flexibles
-Pareja 1 (HU-01): David / Anthony | Pareja 2 (HU-02): Kevin / Mauricio
+Pareja 1 (HU-01): Kevin/Mauricio | Pareja 2 (HU-02): David / Anthony
 Facilitación: Mauricio | Seguimiento: Anthony | Consulta al cliente: Kevin
 Las responsabilidades pueden cambiar durante el examen.
 
