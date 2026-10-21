@@ -31,18 +31,22 @@ Las responsabilidades pueden cambiar durante el examen.
 |---|---|---|
 |  | | HU-01 |
 |  | |  HU-02 |
-|  | HU-03 |  |
+|  |  | HU-03 |
 
 ## Prácticas técnicas
 Evidencia RED (prueba inicial que falla, momento o commit):
 "Prueba unitaria de UH-01, estado actual: RED"
 Evidencia RED HU-01 (commit `32bedd976cb9454cb2206a7a6cf7719327d8b0ab`)
 Evidencia GREEN (prueba que pasa después, momento o commit):
-
+Evidencia GREEN HU-01 (commit `68cdad40a59a016b3aa18892d4892136a720563f`)
 
 Evidencia RED HU-02 (commit `702323d`): `CancellationPolicyTest.cancelarConTitularYBloqueCorrectosLiberaElBloque` falló con `expected: <true> but was: <false>` (mvn test, `CancellationPolicy.cancel` aún sin implementar).
 Evidencia GREEN HU-02 (commit `b1d2cd6`): tras implementar `CancellationPolicy.cancel`, `mvn test` reportó `Tests run: 3, Failures: 0, Errors: 0, BUILD SUCCESS`.
 Refactorización o decisión de simplicidad: HU-02 reutiliza `Reservations.validSlot` y `Reservations.validStudent` ya existentes en el contrato, en vez de duplicar validaciones en `CancellationPolicy`.
+
+Evidencia RED HU-03 (commit `880a0d36aef156dafece0214f3edc8f99f7d92fa`)
+Evidencia GREEN HU-03 (commit `68cdad40a59a016b3aa18892d4892136a720563f`)
+
 
 ## Git / revisión / CI
 PR HU-01: Anthony Contreras | Revisor distinto del autor: Mauricio Carrion 

@@ -11,6 +11,10 @@ final class BookingPolicy {
         if (ownerBySlot.containsKey(slot)) {
             return false;
         }
+        // Regla CR-01 / HU-03: un mismo estudiante no puede mantener más de una reserva activa
+        if (ownerBySlot.containsValue(studentId)) {
+            return false;
+        }
         ownerBySlot.put(slot, studentId);
         return true;
     }
