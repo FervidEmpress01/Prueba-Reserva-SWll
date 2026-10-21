@@ -31,7 +31,7 @@ Las responsabilidades pueden cambiar durante el examen.
 |---|---|---|
 |  | | HU-01 |
 |  | |  HU-02 |
-|  | HU-03 |  |
+|  |  | HU-03 |
 
 ## Prácticas técnicas
 Evidencia RED (prueba inicial que falla, momento o commit):
